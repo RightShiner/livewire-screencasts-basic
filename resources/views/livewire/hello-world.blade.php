@@ -10,4 +10,8 @@
   @if ($lazy)
     !
   @endif
+  <form action="#" wire:submit.prevent="$set('name', 'Bingo')">
+    <button>Reset Name</button>
+  </form>
+  {{-- <button wire:click="resetName($event.target.innerText)">Reset Name</button> --}}
 </div>
